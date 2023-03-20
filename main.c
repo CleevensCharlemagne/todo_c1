@@ -1,8 +1,3 @@
+// C program for the above approach
 #include <stdio.h>
 #include <stdlib.h>
-
-int main()
-{
-    printf("Hello world!\n");
-    return 0;
-}
