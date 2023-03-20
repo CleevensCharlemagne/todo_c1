@@ -297,5 +297,11 @@ void deletetodo()
 // of the nodes
 void adjustcount()
 {
+	// For traversal, using
+	// a node pointer
+	todo* temp;
+	int i = 1;
+	temp = start;
+
 
 }
