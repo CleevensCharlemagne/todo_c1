@@ -236,5 +236,9 @@ void deletetodo()
 	// todo to be deleted
 	int x;
 
+	todo *del, *temp;
+	printf("\nEnter the ToDo's number"
+		+ " that you want to remove.\n\t\t");
+
 
 }
