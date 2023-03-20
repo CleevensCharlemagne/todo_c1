@@ -292,3 +292,10 @@ void deletetodo()
 	}
 	system("pause");
 }
+
+// Function to adjust the numbering
+// of the nodes
+void adjustcount()
+{
+
+}
