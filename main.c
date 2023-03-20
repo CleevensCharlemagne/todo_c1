@@ -18,3 +18,9 @@ struct ToDo {
 	// the number of nodes
 	int count;
 };
+
+
+// Declare start pointer as null in
+// the beginning
+todo* start = NULL;
+
