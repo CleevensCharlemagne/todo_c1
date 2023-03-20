@@ -24,3 +24,69 @@ struct ToDo {
 // the beginning
 todo* start = NULL;
 
+// Driver Code
+int main()
+{
+	int choice;
+	interface();
+
+	while (1) {
+
+		// Change console color and
+		// text color
+		system("Color 3F");
+
+		// Clear the console
+		system("cls");
+
+		printf("1. To see your ToDo list\n");
+		printf("2. To create new ToDo\n");
+		printf("3. To delete your ToDo\n");
+		printf("4. Exit");
+		printf("\n\n\nEnter your choice\t:\t");
+
+		// Choice from the user
+		scanf("%d", &choice);
+
+		switch (choice) {
+
+		// Calling functions defined
+		// below as per the user input
+		case 1:
+			seetodo();
+			break;
+		case 2:
+			createtodo();
+			break;
+		case 3:
+			deletetodo();
+			break;
+		case 4:
+			exit(1);
+			break;
+		default:
+			printf("\nInvalid Choice :-(\n");
+			system("pause");
+		}
+	}
+	return 0;
+}
+
+// Code for Splash screen
+void interface()
+{
+	system("color 4F");
+	printf("\n\n\n\n");
+	printf("\t~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~\n");
+	printf("\t~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~~~~~~~~~~~~~~~"
+		"~~~~~~~~~~\n\n");
+
+}
+
