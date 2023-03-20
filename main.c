@@ -125,7 +125,24 @@ void seetodo()
 	// start of linked list
 	temp = start;
 
+	// Condition for empty linked list
+	if (start == NULL)
+		printf("\n\nEmpty ToDo \n\n");
 
+	// Traverse until last node
+	while (temp != NULL) {
+
+		// Print number of the node
+		printf("%d.)", temp->count);
+
+		// Print data of the node
+		puts(temp->buffer);
+
+		// Clear output console
+		fflush(stdin);
+
+		// Going to next node
+		temp = temp->next;
 	}
 
 	printf("\n\n\n");
