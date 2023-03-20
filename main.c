@@ -306,6 +306,8 @@ void adjustcount()
 	// Running loop until last node
 	// and numbering it one by one
 	while (temp != NULL) {
-
+		temp->count = i;
+		i++;
+		temp = temp->next;
 	}
 }
