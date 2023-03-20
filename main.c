@@ -240,5 +240,9 @@ void deletetodo()
 	printf("\nEnter the ToDo's number"
 		+ " that you want to remove.\n\t\t");
 
+	// Checking empty condition
+	if (start == NULL)
+		printf("\n\nThere is no ToDo"
+			+ " for today :-)\n\n\n");
 
 }
