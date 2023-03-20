@@ -253,5 +253,17 @@ void deletetodo()
 
 			}
 
-
+			if (temp->count == x) {
+				del->next = temp->next;
+				free(temp);
+				adjustcount();
+				break;
+			}
+			else {
+				del = temp;
+				temp = temp->next;
+			}
+		}
+	}
+	system("pause");
 }
