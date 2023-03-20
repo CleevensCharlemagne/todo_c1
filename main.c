@@ -112,3 +112,23 @@ void interface()
 	system("pause");
 }
 
+// To view all the todos
+void seetodo()
+{
+	// Clearing the console
+	system("cls");
+
+	// Pointer to the node for traversal
+	todo* temp;
+
+	// temp is made to point the
+	// start of linked list
+	temp = start;
+
+
+	}
+
+	printf("\n\n\n");
+	system("pause");
+}
+
