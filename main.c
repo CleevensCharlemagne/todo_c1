@@ -250,7 +250,32 @@ void deletetodo()
 		// del will point to start
 		del = start;
 
+		// temp will point to start's
+		// next so that traversal and
+		// deletion is achieved easily
+		temp = start->next;
 
+		// Running infinite loop so
+		// that user can delete and
+		// asked again for choice
+		while (1) {
+
+			// When the values matches,
+			// delete the node
+			if (del->count == x) {
+
+				// When the node to be
+				// deleted is first node
+				start = start->next;
+
+				// Deallocating the memory
+				// of the deleted node
+				free(del);
+
+				// Adjusting the count when
+				// node is deleted
+				adjustcount();
+				break;
 			}
 
 			if (temp->count == x) {
