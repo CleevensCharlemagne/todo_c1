@@ -244,5 +244,14 @@ void deletetodo()
 	if (start == NULL)
 		printf("\n\nThere is no ToDo"
 			+ " for today :-)\n\n\n");
+	else {
+		scanf("%d", &x);
+
+		// del will point to start
+		del = start;
+
+
+			}
+
 
 }
